@@ -7,10 +7,7 @@ Reverse String Alternate Solution
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        for(int i = 0; i < s.size()/2; i++){
-            int tmp = s[(s.size()-1)-i];
-            s[(s.size()-1)-i] = s[i];
-            s[i]= tmp;
-        }
+        reverse(s.begin(), s.end());
     }
 };
+// This likely the most obvious solution to me, but I don't think this shows much thought.
